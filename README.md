@@ -33,4 +33,15 @@ Envoyer :
 ```
 git push origin master
 ```
-(test) 
+
+## BRANCHES
+
+Créer une branche :
+```
+git branch nom_de_la_branche
+```
+
+Changer de branche :
+```
+git checkout nom_de_la_branche
+```
