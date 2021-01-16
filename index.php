@@ -15,7 +15,7 @@
         ?>
     </head>
 
-    <body>
+    <body class="d-flex flex-column min-vh-100">
 
         <header>
             <?php
@@ -44,7 +44,8 @@
             </div>
         </main>
 
-        <footer class="w-100 mt-3 p-3 bg-dark position-absolute bottom-0 start-50 translate-middle-x">
+        <footer class="w-100 mt-auto p-3 bg-dark">
+        <!-- <footer class="w-100 mt-3 p-3 bg-dark position-absolute bottom-0 start-50 translate-middle-x"> -->
             <?php
                 require('./templates/footer.html');
             ?>
