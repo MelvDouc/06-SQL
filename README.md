@@ -46,9 +46,24 @@ Changer de branche :
 git checkout nom_de_la_branche
 ```
 
+Supprimer branche localement :
+```
+git branch -d nom_de_la_branche
+```
+
+Supprimer branche distante :
+```
+git push origin --delete nom_de_la_branche
+```
+
 ## DIVERS
 
 fatal: refusing to merge unrelated histories
 ```
 git pull origin master --allow-unrelated-histories
+```
+
+Supprimer l'URL d'origine :
+```
+git remote rm origin
 ```
