@@ -36,6 +36,8 @@
                             include('./includes/read.inc.php');
                         } else if(isset($_GET['create'])){
                             include('./includes/create.inc.php');
+                        } else if(isset($_GET['update'])){
+                            include('./includes/update.inc.php');
                         } else {
                             echo '<h2 class="m-0 p-5">Bienvenue&nbsp;!</h2>';
                         }

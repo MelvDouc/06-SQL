@@ -22,6 +22,18 @@
 
     /* CRUD - UPDATE */
     else if(isset($_POST['update'])) {
+        
+        $id = $_POST['id'];
+        $prenom = $_POST['prenom'];
+        $codepostal = $_POST['codepostal'];
+        $ville = $_POST['ville'];
+
+        $req = $bdd->prepare('UPDATE apprenants SET prenom=:prenom, codepostal=:codepostal, ville=:ville WHERE id=' . $id);
+        // $req->bindParam(':id', $id, PDO::PARAM_INT); /* Pas besoin de mettre à jour l'id. */
+        $req->bindParam(':prenom', $prenom, PDO::PARAM_STR);
+        $req->bindParam(':codepostal', $codepostal, PDO::PARAM_INT);
+        $req->bindParam(':ville', $ville, PDO::PARAM_STR);
+        $req->execute();
 
         header('Location: ../index.php?read');
     }
