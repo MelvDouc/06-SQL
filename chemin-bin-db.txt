@@ -1,0 +1,1 @@
+C:\wamp64\bin\mysql\mysql5.7.31\data\06@002dsql

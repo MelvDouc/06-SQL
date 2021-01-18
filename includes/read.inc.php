@@ -26,8 +26,8 @@
                     <td><?= $donnees['codepostal']?></td>
                     <td><?= $donnees['ville']?></td>
                     <td class="text-center">
-                        <a href="" class="btn btn-sm btn-primary">Modifier</a>
-                        <a href="./includes/traitement.php?delete" class="btn btn-sm btn-danger">Supprimer</a>
+                        <a href="./includes/update.php?update=<?= $donnees['id'] ?>" class="btn btn-sm btn-primary">Modifier</a>
+                        <a href="./includes/traitement.php?delete=<?= $donnees['id'] ?>" class="btn btn-sm btn-danger">Supprimer</a>
                     </td>
                 </tr>        
             <?php } ?>

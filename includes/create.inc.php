@@ -24,6 +24,8 @@
         <input type="text" name="ville" placeholder="Paris" class="form-control">
     </div>
     
-    <div class="text-end"><button class="btn btn-dark" type="submit">Envoyer</button></div>
+    <div class="text-end">
+        <button class="btn btn-dark" name="create" type="submit">Envoyer</button>
+    </div>
 
 </form>
