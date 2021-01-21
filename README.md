@@ -34,6 +34,11 @@ Envoyer :
 git push origin master
 ```
 
+Supprimer un fichier distant :
+```
+git rm nom_du_fichier
+```
+
 ## BRANCHES
 
 Créer une branche :
